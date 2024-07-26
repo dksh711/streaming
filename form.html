@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Trial Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1 id="formh1">Submit details to access free-trail</h1>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="01eecb84-927c-47c7-8b00-b7aadc5a1d60">
+            <input type="hidden" name="subject" value="New Submission from Web3Forms">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+            <!-- Custom Form Data -->
+            <div class="form-field">
+                <label for="name"><i class="fa fa-user"></i></label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-field">
+                <label for="email"><i class="fa fa-envelope"></i></label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-field">
+                <label for="message"><i class="fa fa-comment"></i></label>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+
+            <div id="result"></div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

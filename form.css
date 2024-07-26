@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('men-who-likes-tv.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Index Page Styles */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #2F4F4F;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #FFD700; /* Changed to a lighter color */
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info {
+    list-style: disc; /* Added bullets */
+    padding: 0 20px; /* Added padding for better spacing */
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    color: #C9E4CA; /* Changed to a lighter color */
+    font-size: 1.1em;
+}
+
+.info li {
+    margin: 10px 0;
+}
+
+.info li::marker {
+    color: #FF8C00; /* Changed bullet color */
+    font-size: 1.2em;
+}
+
+.streaming-image {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light grey border for image */
+}
+
+button {
+    width: 30%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2F4F4F; /* Changed text color */
+    background-color: #FFD700; /* Changed background color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC107; /* Changed hover color */
+}
+/* Form Page Styles */
+
+#formh1{
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #FFD700; /* Changed to a lighter color */
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-field label {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#result {
+    margin-top: 20px;
+}

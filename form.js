@@ -2,6 +2,18 @@ document.getElementById('free-trial-button').addEventListener('click', function(
     window.location.href = 'form.html';
 });
 
+document.getElementById('whatsapp-btn').addEventListener('click', function() {
+    var whatsappUrl = 'https://wa.me/447453654443'; 
+    window.open(whatsappUrl, '_blank');
+});
+
+document.getElementById('mail-btn').addEventListener('click', function() {
+    var email = 'Info.hdstreaming@gmail.com'; // Replace with your email address
+    var subject = 'Package Subscription'; // Replace with your email subject
+    var body = 'I Want to Subscribe your Package'; // Replace with your email body text
+    var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    window.location.href = mailtoLink;
+});
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
